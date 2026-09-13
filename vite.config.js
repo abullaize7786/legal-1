@@ -3,12 +3,13 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    rollupOptions: {
-      output: {
-        inlineDynamicImports: true,
-      }
+    base: '/legalmetrology/',
+    plugins: [react()],
+    build: {
+        rollupOptions: {
+            output: {
+                inlineDynamicImports: true,
+            }
+        }
     }
-  }
 })
